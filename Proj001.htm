@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel='stylesheet' type='text/css' href='Styles.css'/>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title> CSC103-END OF SEM #PROJECT </title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+* {box-sizing:border-box} body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none} 
+			 
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+/*slideshow-container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+			 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: pink;
+}
+
+/* Caption text */
+.text {
+  color: lightblue;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: green;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: pink;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: lightgreen;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+ .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+ </style>
+ </head>
+ <div align="center"; style="vertical-align: bottom">
+<body>
+
+<div class="header">
+     <h1 style="color: red;" ><img src="gplogo.jpg" style="width:100px; height:100px;"> GAMERS PARADISE:- THE #NO_1 STOP FOR YOUR GAMING PC</h1>
+</div>	 
+	 <ul>
+         <li><a href="about_us.html" target="_blank">ABOUT US</a></li>
+         <li><a href="shopnow.html" target="_blank">SHOP NOW</a></li>
+         <li><a href="contactus.html" target="_blank">CONTACT US</a></li>
+         <li><a href="referrences.html" target="_blank">REFERRENCES</a></li>
+     </ul>
+
+<div class="container">
+
+<header>     
+	 <h2>
+		 <u>BORN TO CONQUER NEW WORLDS* </u>
+	 </h2><br>
+</header>
+
+<nav>
+     <ul>
+         <li><a href="#">BLOG</a></li>
+         <li><a href="#">Discussion FORUM</a></li>		 
+	 </ul>
+</nav>	 
+	 <b><p class="sansserif"> GET A CLASSIC PC AT A REDUCED PRICE! ONLY AT GAMERS PARADISE!!</p></b>
+        <br>
+	     <div class="slideshow-container">
+	     <div class="mySlides fade">
+         <div class="numbertext"> 1/3 </div>
+		     <img src="slide001.jpg" style="width:100%;">
+         <div class="text"> ASUS GAMING DESKTOP </div>
+     </div>
+	 
+	 <div class="mySlides fade">
+	     <div class="numbertext"> 2/3 </div>
+		     <img src="slide002.jpg" style="width:100%">
+		 <div class="text"> ASUS ULTRA-BOOK </div>
+	 </div>
+
+     <div class="mySlides fade">
+         <div class="numbertext"> 3/3 </div>	 
+		     <img src="slide003.jpg"style="width:100%">
+		 <div class="text"> UNIQUE_GAMING_MONITORS </div>
+	 </div>
+
+     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+     <a class="next" onclick="plusSlides(1)">&#10095;</a>	 
+			 
+	 </div>		 
+	 <br>		 
+			 
+	 <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<article>
+  
+<h3> YOUR REQUEST IS OUR #COMMAND...</h3>
+     <p class="sansserif"> Order or Pre-Order even before Shipments arrive and Enjoy Special Discounts!<br>
+	 We know many People are Enthusiastic about Gaming,but the Reality is that, only some Can
+	 really afford to buy the PCs.
+	 We want to change the Story...Make Gaming Machines available for all Enthusiatic Persons.
+	 Be on the Lookout for new Shipments...<br>
+	 </p>
+     <img src="webunderconstruction001.jpg" style="width: 1280px; height:270px;">
+</article>	 
+</div>	
+ 
+<footer>	                          
+<b>	 
+ Copyright &copy KIRITU NDEKERE. All rights reserved.
+ </b>
+ </footer>
+ </div>
+ 
+</body>
+</html>
